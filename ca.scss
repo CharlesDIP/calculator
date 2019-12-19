@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#calculator {
+    box-sizing: border-box;
+    margin-top: 100px;
+    background-color: rgb(61, 61, 60);
+    width: 315px;
+    height: 440px;
+    position: relative;
+    .loadStyle{
+        display: none;
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        top: 50%;
+        left: 50%;
+        margin-top: -50px;
+        margin-left: -50px;
+        background: red($color: #000000);
+        z-index: 999;
+      }
+    #header {
+        width: 100%;
+        height: 30px;
+        // border: 1px solid red;
+        display: flex;
+        justify-content: flex-start;
+
+        span {
+            position: absolute;
+            margin: 5px;
+            height: 18px;
+            width: 18px;
+            border-radius: 50%;
+            background: red;
+        }
+
+        .crl1 {
+            left: 5px;
+            background: rgb(213, 82, 76);
+        }
+
+        .crl2 {
+            left: 30px;
+            background: rgb(233, 185, 60);
+        }
+
+        .crl3 {
+            left: 55px;
+            background: rgb(123, 199, 78);
+        }
+    }
+
+
+
+    .inputBox {
+        height: 80px;
+        width: 100%;
+
+        input {
+            border: 0;
+            outline: none;
+            height: 100%;
+            line-height: 100%;
+            width: 99%;
+            background-color: rgba(0, 0, 0, 0);
+            text-align: right;
+            font-size: 65px;
+
+            &::-webkit-input-placeholder {
+                color: #fff;
+                font-weight: lighter;
+                padding: 15px;
+            }
+        }
+
+
+    }
+
+    #footer {
+        margin-top: 5px;
+        width: 100%;
+        height: 320px;
+
+        div {
+            display: flex;
+            input {
+                flex: 1;
+                border: 0;
+                outline: none;
+                color: #fff;
+                font-size: 25px;
+                width: 74px;
+                height: 65px;
+                padding-right: 2px;
+                background-color: rgb(107, 108, 105);
+                border: 1px solid rgb(61, 61, 60);
+                display: block;
+            }
+        }
+
+        .symbol {
+            background-color: rgb(79, 80, 76)
+        }
+
+        .operator {
+            background-color: rgb(225, 155, 34)
+        }
+
+        .zeroLeft{
+            border-right: 1px transparent solid;
+          
+        }
+        .zeroRight {
+            border-left: 1px transparent solid;
+        }
+    }
+
+}

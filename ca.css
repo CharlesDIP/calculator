@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#calculator {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 100px;
+  background-color: #3d3d3c;
+  width: 315px;
+  height: 440px;
+  position: relative;
+}
+
+#calculator .loadStyle {
+  display: none;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  background: 0;
+  z-index: 999;
+}
+
+#calculator #header {
+  width: 100%;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#calculator #header span {
+  position: absolute;
+  margin: 5px;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background: red;
+}
+
+#calculator #header .crl1 {
+  left: 5px;
+  background: #d5524c;
+}
+
+#calculator #header .crl2 {
+  left: 30px;
+  background: #e9b93c;
+}
+
+#calculator #header .crl3 {
+  left: 55px;
+  background: #7bc74e;
+}
+
+#calculator .inputBox {
+  height: 80px;
+  width: 100%;
+}
+
+#calculator .inputBox input {
+  border: 0;
+  outline: none;
+  height: 100%;
+  line-height: 100%;
+  width: 99%;
+  background-color: rgba(0, 0, 0, 0);
+  text-align: right;
+  font-size: 65px;
+}
+
+#calculator .inputBox input::-webkit-input-placeholder {
+  color: #fff;
+  font-weight: lighter;
+  padding: 15px;
+}
+
+#calculator #footer {
+  margin-top: 5px;
+  width: 100%;
+  height: 320px;
+}
+
+#calculator #footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#calculator #footer div input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border: 0;
+  outline: none;
+  color: #fff;
+  font-size: 25px;
+  width: 74px;
+  height: 65px;
+  padding-right: 2px;
+  background-color: #6b6c69;
+  border: 1px solid #3d3d3c;
+  display: block;
+}
+
+#calculator #footer .symbol {
+  background-color: #4f504c;
+}
+
+#calculator #footer .operator {
+  background-color: #e19b22;
+}
+
+#calculator #footer .zeroLeft {
+  border-right: 1px transparent solid;
+}
+
+#calculator #footer .zeroRight {
+  border-left: 1px transparent solid;
+}
+/*# sourceMappingURL=ca.css.map */

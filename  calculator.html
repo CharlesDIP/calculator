@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="ca.css">
+    <link rel="stylesheet" href="./loading/load.css">
+</head>
+
+<body>
+
+    <div id="calculator">
+        <div class="loadStyle"></div>
+        <div id="header">
+            <span class="crl1"></span>
+            <span class="crl2"></span>
+            <span class="crl3"></span>
+        </div>
+        <div class="inputBox">
+            <input type="text" placeholder="0"  class="form">
+        </div>
+
+        <div id="footer">
+            <div>
+                <input type="button" class="symbol" value="AC" onclick="clearAll()">
+                <input type="button" class="symbol" value="+/-" onclick="change()">
+                <input type="button" class="symbol" value="%" onclick="jsq(this.value) ">
+                <input type="button" class="operator" value="&divide;" onclick="jsq('/') ">
+            </div>
+            <div>
+                <input type="button" value="7" onclick="jsq(this.value) ">
+                <input type="button" value="8" onclick="jsq(this.value) ">
+                <input type="button" value="9" onclick="jsq(this.value) ">
+                <input type="button" class="operator" value="&times;" onclick="jsq('*') ">
+            </div>
+            <div>
+                <input type="button" value="4" onclick="jsq(this.value) ">
+                <input type="button" value="5" onclick="jsq(this.value) ">
+                <input type="button" value="6" onclick="jsq(this.value) ">
+                <input type="button" class="operator" value="-" onclick="jsq(this.value) ">
+            </div>
+            <div>
+                <input type="button" value="1" onclick="jsq(this.value) ">
+                <input type="button" value="2" onclick="jsq(this.value) ">
+                <input type="button" value="3" onclick="jsq(this.value) ">
+                <input type="button" class="operator" value="+" onclick="jsq(this.value) ">
+            </div>
+            <div>
+                <input type="button" class='zeroLeft' value="0" onclick="jsq(this.value) ">
+                <input type="button" class="zeroRight" value="" onclick="jsq('0') ">
+                <input type="button" value="." onclick="jsq(this.value) ">
+                <input type="button" class="operator" value="=" onclick="evalNum()">
+            </div>
+
+        </div>
+    </div>
+
+</body>
+<script src="ca.js"></script>
+
+</html>
